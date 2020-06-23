@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                     changeToSave();
                 }
                 else {
-                    UserData user= new UserData(etname.getText().toString(),etage.getText().toString(),etcalorie.getText().toString());
+                        UserData user= new UserData(etname.getText().toString(),etage.getText().toString(),etcalorie.getText().toString());
                     databaseUsers.child(id).setValue(user);
                     changeToEdit();
                     saveData();
